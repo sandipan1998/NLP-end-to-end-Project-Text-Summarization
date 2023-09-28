@@ -87,6 +87,10 @@ Email: msandipan98@gmail.com
 
 	2. AmazonEC2FullAccess
 
+# Additional Steps for Deployment 🔄
+
+# Follow these additional steps to complete the deployment setup:
+
 	
 ## 3. Create ECR repo to store/save docker image
     - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/text-s
@@ -113,11 +117,13 @@ Email: msandipan98@gmail.com
 
 	newgrp docker
 	
-# 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
+## 6. Configure EC2 as self-hosted runner:
+    Go to Settings > Actions > Runner > New self-hosted runner.
+Choose the appropriate operating system.
+Run the provided commands one by one.
 
 
-# 7. Setup github secrets:
+## 7. Setup github secrets:
 
     AWS_ACCESS_KEY_ID=
 
@@ -128,3 +134,6 @@ Email: msandipan98@gmail.com
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
     ECR_REPOSITORY_NAME = simple-app
+
+### Please note that some formatting elements may not be displayed correctly in the plain text format, but they will be rendered correctly in the Markdown format when viewed on platforms like GitHub.
+
